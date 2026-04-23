@@ -1,12 +1,12 @@
   # celsius_to_fahrenheit.py
 def convert(celsius):
-return (celsius * 9/5) + 32
+ return (celsius * 9/5) + 32
 # fahrenheit_to_celsius.py
 def convert(fahrenheit):
-return (fahrenheit - 32) * 5/9
+ return (fahrenheit - 32) * 5/9
 celsius_to_kelvin.py
 def convert(celsius):
-return celsius + 273.15
+ return celsius + 273.15
 # temperature.py
 from temperature import celsius_to_fahrenheit
 from temperature import fahrenheit_to_celsius
@@ -17,16 +17,16 @@ print("2. Fahrenheit to Celsius")
 print("3. Celsius to Kelvin")
 choice = int(input("Enter your choice (1-3): "))
 if choice == 1:
-c = float(input("Enter temperature in Celsius: "))
-result = celsius_to_fahrenheit.convert(c)
+ c = float(input("Enter temperature in Celsius: "))
+ result = celsius_to_fahrenheit.convert(c)
 print("Temperature in Fahrenheit:", result)
 elif choice == 2:
-f = float(input("Enter temperature in Fahrenheit: "))
-result = fahrenheit_to_celsius.convert(f)
-print("Temperature in Celsius:", result)
+ f = float(input("Enter temperature in Fahrenheit: "))
+ result = fahrenheit_to_celsius.convert(f)
+ print("Temperature in Celsius:", result)
 elif choice == 3:
-c = float(input("Enter temperature in Celsius: "))
-result = celsius_to_kelvin.convert(c)
-print("Temperature in Kelvin:", result)
+ c = float(input("Enter temperature in Celsius: "))
+ result = celsius_to_kelvin.convert(c)
+ print("Temperature in Kelvin:", result)
 else:
-print("Invalid choice!")
+ print("Invalid choice!")
